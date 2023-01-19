@@ -2,10 +2,13 @@
   "name": "new-dir",
   "version": "1.0.0",
   "description": "Training in npm",
-  "main": "app.js",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "push": "git add . && git commit -m 'update' && git push"
+    "push": "git add . && git commit -m 'update' && git push",
+    "server": "node server.js",
+    "test": "clear",
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
   },
   "repository": {
     "type": "git",
@@ -16,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/Serhii-Soloviov/-/issues"
   },
-  "homepage": "https://github.com/Serhii-Soloviov/-#readme"
+  "homepage": "https://github.com/Serhii-Soloviov/-#readme",
+  "dependencies": {
+    "joi": "^17.7.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  }
 }
